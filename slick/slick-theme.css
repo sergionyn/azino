@@ -1,0 +1,118 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 24px;
+    height: 30px;
+    border: 0;
+    background: url(../img/icons.png) no-repeat 0 -32px;
+}
+.slick-prev {
+    background-position: 0 -62px;
+}
+.slick-prev:hover,
+.slick-prev:focus {
+    background-position: 0px -124px;
+}
+.slick-next:hover,
+.slick-next:focus
+{
+    background-position: 0px -94px;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+
+.slick-prev
+{
+    left: -24px;
+}
+
+
+
+.slick-next
+{
+    right: -24px;
+}
+
+
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+}
+
+.slick-dots
+{
+    position: absolute;
+    top: 4px;
+    right: -11px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 1px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    display: block;
+    width: 11px;
+    height: 11px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #a2a4a4;
+    border-radius: 100%;
+    background: #dddcd3;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5), inset 0 0 5px #a2a4a4;
+}
+
+.slick-dots li.slick-active button {
+    border: 1px solid #8e80b4;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5), inset 0 0 3px #8e80b4;
+}
